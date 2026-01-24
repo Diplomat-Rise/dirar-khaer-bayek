@@ -4,12 +4,11 @@ function downloadVCard() {
   const vCardData = `
 BEGIN:VCARD
 VERSION:3.0
-FN:HUSSAM OUSAMA ASAAD 
+FN:Dirar khaer bayek
 TITLE:Sales Manager
-ORG:RISE Properties
-TEL;TYPE=WORK,VOICE:+971589826204
-TEL;TYPE=WORK,VOICE:+971589826204
-EMAIL:Ahmed.Uzair@riseproperties.ae
+ORG:RISE Properties Branch
+TEL;TYPE=WORK,VOICE:+971521607929
+EMAIL:dirarkhaerbranch@riseproperties.ae
 URL:http://www.riseproperties.ae
 ADR;TYPE=WORK:;;PO Box No 181702, Office NO.1607, Opal Tower, Business Bay;Dubai;;UAE
 END:VCARD
@@ -20,7 +19,7 @@ END:VCARD
 
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'HUSSAM OUSAMA ASAAD.vcf';
+  a.download = 'Dirar khaer bayek.vcf';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -31,4 +30,5 @@ document.querySelector('.save-contact-button').addEventListener('click', functio
   e.preventDefault();
   downloadVCard();
 });
+
 
